@@ -5,14 +5,15 @@ import './index.css';
 import Navbar from './components/navbar.js';
 import Register from './components/register.js';
 import Login from './components/login.js';
+import Home from './components/home.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
     <Router>
-      <p>Changes Done</p>
       <Navbar/>
+      <Home/>
       <Routes>
         <Route path ="/register" element={<Register/>}/>
         <Route path ="/login" element={<Login/>}/>
